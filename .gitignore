@@ -1,0 +1,72 @@
+# Frontend (Node.js/Vite)
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+
+# Backend (Python/Django)
+privacy-dashboard/venv/
+privacy-dashboard/env/
+privacy-dashboard/.venv/
+privacy-dashboard/__pycache__/
+privacy-dashboard/*.py[cod]
+privacy-dashboard/*$py.class
+privacy-dashboard/*.so
+privacy-dashboard/.Python
+privacy-dashboard/build/
+privacy-dashboard/develop-eggs/
+privacy-dashboard/dist/
+privacy-dashboard/downloads/
+privacy-dashboard/eggs/
+privacy-dashboard/.eggs/
+privacy-dashboard/lib/
+privacy-dashboard/lib64/
+privacy-dashboard/parts/
+privacy-dashboard/sdist/
+privacy-dashboard/var/
+privacy-dashboard/wheels/
+privacy-dashboard/pip-wheel-metadata/
+privacy-dashboard/share/python-wheels/
+privacy-dashboard/*.egg-info/
+privacy-dashboard/.installed.cfg
+privacy-dashboard/*.egg
+privacy-dashboard/MANIFEST
+privacy-dashboard/.pytest_cache/
+privacy-dashboard/.coverage
+privacy-dashboard/htmlcov/
+privacy-dashboard/.env
+privacy-dashboard/.env.local
+privacy-dashboard/db.sqlite3
+privacy-dashboard/db.sqlite3-journal
+privacy-dashboard/media/
+privacy-dashboard/staticfiles/
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+.vscode-server/
+
+# OS specific
+Thumbs.db
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Temporary files
+*.tmp
+*.bak
+*.backup

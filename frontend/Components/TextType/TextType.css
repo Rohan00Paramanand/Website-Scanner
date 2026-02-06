@@ -1,0 +1,37 @@
+.text-type {
+  position: fixed;
+  top: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  z-index: 9999;
+  color: black;
+  pointer-events: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.text-type__content {
+  display: inline-block;
+}
+
+.text-type__cursor {
+  margin-left: 0.25rem;
+  display: inline-block;
+  opacity: 1;
+  font-weight: 700;
+}
+
+.text-type__cursor--hidden {
+  visibility: hidden;
+}
+
+@media (min-width: 768px) {
+  .text-type {
+    font-size: 2rem;
+  }
+}
