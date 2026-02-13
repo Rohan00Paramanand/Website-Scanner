@@ -46,8 +46,13 @@ class WebsiteViewSet(viewsets.ModelViewSet):
         return Website.objects.filter(owner=self.request.user)
 
     @action(detail=True, methods=['post'])
-    def scan(self):
+    def scan(self, request, pk=None):
         website = self.get_object()
+        from .scraper import is_allowed_target
+        allowed, message = is_allowed_target(website.url)
+        if not allowed:
+            return Response({"detail": f"Scan failed: {message}"}, status=400)
+            
         scan_website_task.delay(website.id)
         return Response({"message": "Scan started"})
 
